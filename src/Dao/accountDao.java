@@ -20,7 +20,7 @@ public class accountDao {
     }
     public boolean checklogin(String username,String pass){
         for(Account u : list){
-            if(u.getUsername().equals(username)&&u.getPassWord().equals(pass)){
+            if(u.getUsername().equalsIgnoreCase(username)&&u.getPassWord().equals(pass)){
                 return true;
             }
         }

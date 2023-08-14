@@ -13,19 +13,25 @@ public class User {
     private String ma;
     private String ten;
     private String soDT;
-    private String namSinh;
+    private int namSinh;
     private double soDu;
 
     public User() {
     }
 
-    public User(String ma, String ten, String soDT, String namSinh, double soDu) {
+    public User(String ma, String ten, String soDT, int namSinh, double soDu) {
         this.ma = ma;
         this.ten = ten;
         this.soDT = soDT;
         this.namSinh = namSinh;
         this.soDu = soDu;
     }
+
+    public User(String ma) {
+        this.ma = ma;
+    }
+
+   
 
     public String getMa() {
         return ma;
@@ -51,14 +57,15 @@ public class User {
         this.soDT = soDT;
     }
 
-    public String getNamSinh() {
+    public int getNamSinh() {
         return namSinh;
     }
 
-    public void setNamSinh(String namSinh) {
+    public void setNamSinh(int namSinh) {
         this.namSinh = namSinh;
     }
 
+  
     public double getSoDu() {
         return soDu;
     }
